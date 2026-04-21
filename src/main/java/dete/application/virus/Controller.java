@@ -8,15 +8,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
 
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Controller {
     @FXML private Label ipText;
     @FXML private Label yourIpText;
-    private UserIP userIP = new UserIP();
-    private final AtomicInteger contador = new AtomicInteger(1);
+    private final UserIP userIP = new UserIP();
 
-    private static final Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1.2), actionEvent -> onVirus()));
+    private static final Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1.2), _ -> onVirus()));
 
     @FXML
     protected void getIpOnClick(){
