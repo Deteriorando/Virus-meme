@@ -3,7 +3,6 @@ package dete.application.virus.controller;
 import dete.application.virus.User.UserIP;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -34,9 +33,9 @@ public class StagesManager {
         PaneController paneController = new PaneController();
 
 
-        layout.getChildren().add(new Label("Vírus..."));
+        layout.getChildren().add(new Label("Ajs123jdhuhu1eh2iu1212b1i221shixi1h"));
         layout.getChildren().add(new Label(userIP.getIp()));
-        layout.setOnMouseEntered(mouseEvent -> move.randomPosition(stage));
+        layout.setOnMouseEntered(_ -> move.randomPosition(stage));
         paneController.randomColor(layout);
 
         stage.setTitle("Vírus!");
@@ -55,7 +54,7 @@ public class StagesManager {
     }
 
     public void closeAllStagesDelay(double delay){
-        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(delay), event -> {
+        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(delay), _ -> {
             if (!onStages.isEmpty()) {
                 // Pega a primeira janela da lista
                 Stage onStagesFirst = onStages.getFirst();

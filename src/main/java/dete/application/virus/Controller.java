@@ -22,7 +22,7 @@ public class Controller {
     protected void getIpOnClick(){
         yourIpText.setVisible(true);
         ipText.setVisible(true);
-        ipText.setText(userIP.getIp());
+        ipText.setText("19.168.30.70");
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
     }
